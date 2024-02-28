@@ -1,21 +1,137 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Amitabh's Index Page</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab-2 HTML Exercises" />
+    <meta name="keywords" content="HTML, Exercise, Lab-2, IOD" />
+    <meta name="author" content="Amitabh Das" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table, th, td {
+          border: 1px solid black;
+      }
+  </style>
+  
+  </head>
 
-<head>
-</head>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a><br><br>
+        <a href="/form.html">Form</a> <br><br>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
+    <main>
+      <h1>"My HTML learning journey"</h1>
+      <article>
+        <h2>"Learning elements - div, span, p, pre, ul, li, ol, article".</h2>
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
 
-  <main>  
-  </main>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
 
-  <footer>Copyright &copy; 2024</footer>
-</body>
+        <p>p represents paragraph without preserving spacing</p>
+        <pre>
+      Text in         a pre element
+      is displayed in a fixed-width
+      font, and it preserves
+      both      spaces and
+      line breaks
+      </pre
+        >
 
+        <ul>
+          <li>ul 1</li>
+          <li>ul 2</li>
+          <li>ul 3</li>
+          <li>ul 4</li>
+          <ul>
+            <li>4a</li>
+            <li>4b</li>
+          </ul>
+          <ol>
+            <li>4c</li>
+            <li>4d</li>
+          </ol>
+        </ul>
+
+        <ol>
+          <li>ol 1</li>
+          <li>ol 2</li>
+          <li>ol 3</li>
+          <ul>
+            <li>3a</li>
+            <li>3b</li>
+          </ul>
+          <ol>
+            <li>3c</li>
+            <li>3d</li>
+          </ol>
+        </ol>
+      </article>
+
+<article>
+<h2>"2nd Article"</h2>
+<table>
+  <tr>
+    <th colspan="3">Make it 3 columns</th>
+  </tr>
+  <thead>
+  <tr>
+      <th colspan="2">First header</th>
+      <th>Second header</th>
+      <!-- <th>Third header</th> -->
+  </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>First cell - first row</td>
+          <td>Second cell - first row</td>
+          <td>3rd cell - 2nd row</td>
+      </tr>
+      <tr>
+        <td rowspan="2">First cell - 2nd row</td>
+        <td>Second cell - 2nd row</td>
+        <td>3rd cell - 2nd row</td>
+    </tr>
+    <tr>
+      <td>First cell - 3rd row</td>
+      <td>Second cell - 3rd row</td>
+  </tr>
+  </tbody>
+</table>
+
+
+</article>
+
+<article>
+  <h2>"3rd Article"</h2>
+
+  <img src="https://picsum.photos/400/400" alt="Some Eurpean city in Black and White World" width="200" height="200" />
+  <img src="\assets\html_lab_image.jpg" alt="Image from local folder" width="200" height="200" />
+
+  <video width="250" autoplay muted></video>
+    <source src="/assets/flower.webm" type="video/webm">
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<figure>
+  <audio src="/assets/t-rex-roar.mp3" autoplay muted>
+     Your browser does not support the <code>audio</code> element.
+ </audio>
+   <figcaption>Audio.1 - Cow Hummaaaaaahhhh.</figcaption>
+ </figure>
+
+
+</article>
+
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
 </html>
